@@ -1,0 +1,8 @@
+package oo.encapsulamento2;
+
+import oo.encapsulamento1.Ana;
+
+public class Pedro extends Ana{
+
+	Ana mae = new Ana();
+}

@@ -1,0 +1,17 @@
+package desafio;
+
+import java.util.function.BinaryOperator;
+
+import lambdas.Produto;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		
+		Produto p = new Produto("iPad", 3235.89, 0.13);
+		
+		BinaryOperator<Double> media = (Double preco, Double desconto) -> preco * desconto;
+		
+		System.out.println(media);
+	}
+}

@@ -1,0 +1,23 @@
+package oo.desafio2;
+
+public class Carro {
+	
+	String cor;
+	int velocidadeAtual;
+	
+	void acelerar(){
+		velocidadeAtual += 5;
+	}
+	
+	void frear() {
+		velocidadeAtual -= 5;
+		
+		if(velocidadeAtual < 0) {
+			velocidadeAtual = 0;
+		}
+	}
+	
+	String toString() {
+		return "Velocidade Atual é " + velocidadeAtual + "KM"; 
+	}
+}

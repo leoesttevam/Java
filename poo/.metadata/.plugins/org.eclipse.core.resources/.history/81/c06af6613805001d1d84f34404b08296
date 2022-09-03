@@ -1,0 +1,8 @@
+package oo.desafio1;
+
+public class Esportivo {
+
+	void ligarTurbo();
+	
+	void desligarTurbo();
+}

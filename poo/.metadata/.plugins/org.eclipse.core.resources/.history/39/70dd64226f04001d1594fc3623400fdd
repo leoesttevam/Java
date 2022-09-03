@@ -1,0 +1,15 @@
+package oo.heranca;
+
+public class Jogador {
+
+	int x;
+	int y;
+	
+	boolean andar() {
+		
+		if("norte".equalsIgnoreCase(direcao)) {
+			y++;
+		}
+		return true;
+	}
+}

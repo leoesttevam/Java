@@ -1,0 +1,16 @@
+package oo.desafio2;
+
+public class Ferrari extends Carro{
+
+	int velocidade;
+
+	public Ferrari(int velocidade) {
+		this.velocidade = velocidade;
+		
+		if(velocidadeAtual >= 300) {
+			velocidadeAtual = 300;
+		}
+	}
+	
+	
+}

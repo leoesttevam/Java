@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="br.com.cod3r.app.logging.Logger"/>
+    <fullyQualifiedTypeName name="br.com.cod3r.app.calculo.interno.OperacoesAritmeticas"/>
+    <fullyQualifiedTypeName name="br.com.cod3r.app.calculo.Calculadora"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.com.cod3r.app.financeiro.SuperHeroi"/>
+    <fullyQualifiedTypeName name="java.util.ServiceLoader"/>
+    <fullyQualifiedTypeName name="br.com.cod3r.app.Calculadora"/>
+</qualifiedTypeNameHistroy>

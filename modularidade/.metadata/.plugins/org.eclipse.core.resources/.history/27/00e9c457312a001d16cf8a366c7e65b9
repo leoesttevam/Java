@@ -1,0 +1,10 @@
+package br.com.cod3r.app.financeiro;
+
+import java.util.List;
+
+public class SuperHeroi {
+
+	public List<String> getPoderes() {
+		
+	}
+}

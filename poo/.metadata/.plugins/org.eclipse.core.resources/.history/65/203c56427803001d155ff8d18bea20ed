@@ -1,0 +1,6 @@
+package oo.desafio;
+
+public class Item {
+
+	Produto produto = new Produto();
+}

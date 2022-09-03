@@ -1,0 +1,15 @@
+package oo.desafio2;
+
+public class Carro {
+
+	String modelo;
+	int velocidadeAtual;
+	
+	void acelerar(){
+		velocidadeAtual += 5;
+	}
+	
+	void frear() {
+		velocidadeAtual -= 5;
+	}
+}

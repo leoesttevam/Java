@@ -1,0 +1,32 @@
+package oo.desafio1;
+
+public class Ferrari extends Carro implements Esportivo, Luxo{
+
+	void acelerar(){
+		setVelocidadeAtual(15);
+		
+		if(getVelocidadeAtual() >= 340) {
+			setVelocidadeAtual(340);
+		}
+	}
+	
+	@Override
+	public void ligarTurbo() {
+		setVelocidadeAtual(35);
+	}
+
+	@Override
+	public void desligarTurbo() {
+		setVelocidadeAtual(15);
+	}
+
+	@Override
+	public void ligarAr() {
+		
+	}
+
+	@Override
+	public void desligarAr() {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package oo.desafio1;
+
+public class Civic extends Carro{
+
+	void acelerar(){
+		setVelocidadeAtual(5);
+		
+		if(getVelocidadeAtual() >= 195) {
+			setVelocidadeAtual(195);
+		}
+	}
+}

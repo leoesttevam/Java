@@ -1,0 +1,16 @@
+package oo.desafio2;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		
+		Ferrari f1 = new Ferrari();
+		f1.velocidadeAtual = 0;
+		
+		f1.frear();
+		f1.frear();
+		f1.frear();
+		
+		System.out.println(f1.velocidadeAtual);
+	}
+}

@@ -1,0 +1,33 @@
+package br.com.cod3r.app.financeiro;
+
+import java.lang.reflect.Field;
+
+import br.com.cod3r.app.calculo.Calculadora;
+import br.com.cod3r.app.calculo.interno.OperacoesAritmeticas;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Calculadora calc = new Calculadora();
+		System.out.println(calc.soma(2, 3, 4));
+		
+		OperacoesAritmeticas opr = new OperacoesAritmeticas();
+		System.out.println(opr.soma(5, 8, 2));
+		
+		Field field = Calculadora.class.getDeclaredFields()[0];
+		field.setAccessible(true);
+		try {
+			field.set(calc, "def");
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		field.setAccessible(false);
+		
+		System.out.println(Calculadora.class.getName());
+	}
+}

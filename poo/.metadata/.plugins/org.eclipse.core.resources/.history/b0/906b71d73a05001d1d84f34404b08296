@@ -1,0 +1,40 @@
+package oo.desafio1;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		
+		Ferrari f1 = new Ferrari();
+		
+		f1.acelerar();
+		f1.acelerar();
+		f1.acelerar();
+		f1.acelerar();
+		f1.acelerar();
+		f1.acelerar();
+		f1.acelerar();
+		
+		System.out.println(f1);
+		
+		Civic c1 = new Civic();
+		
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		
+		System.out.println(c1);
+		
+		Fusca fs1 = new Fusca();
+		
+		fs1.acelerar();
+		fs1.acelerar();
+		fs1.acelerar();
+		fs1.acelerar();
+		fs1.acelerar();
+		
+		System.out.println(fs1);
+	}
+}

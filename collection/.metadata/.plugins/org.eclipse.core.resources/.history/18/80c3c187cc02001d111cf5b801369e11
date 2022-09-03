@@ -1,0 +1,22 @@
+package colecoes;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class Conjunto2 {
+
+	public static void main(String[] args) {
+		
+		//Set<String> lista = new HashSet<String>();
+		SortedSet<String> lista = new TreeSet<String>();
+		
+		lista.add("Ana");
+		lista.add("Carlos");
+		lista.add("Lucas");
+		lista.add("Pedro");
+		
+		for(String nome : lista) {
+			System.out.println(nome);
+		}
+	}
+}

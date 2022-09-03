@@ -1,0 +1,27 @@
+package desafio;
+
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
+
+import lambdas.Produto;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		
+		Produto p = new Produto("iPad", 3235.89, 0.13);
+		
+		Function<Produto, Double> precoFinal;
+		UnaryOperator<Double> imposto;
+		UnaryOperator<Double> frete;
+		UnaryOperator<Double> arrendondamento;
+		Function<Double, String> formatado;
+		
+		String preco = precoFinal
+				.andThen(imposto)
+				.andThen(frete)
+				.andThen(arrendondamento)
+				.andThen(formatado).apply(p);
+		System.out.println("O preço final é " + preco);
+	}
+}

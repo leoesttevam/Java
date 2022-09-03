@@ -1,0 +1,12 @@
+package oo.desafio1;
+
+public class Fusca extends Carro{
+
+	void acelerar(){
+		setVelocidadeAtual(5);
+		
+		if(getVelocidadeAtual() >= 117) {
+			setVelocidadeAtual(117);
+		}
+	}
+}

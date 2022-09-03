@@ -1,0 +1,15 @@
+package fundamentos;
+
+public class Whappers {
+
+	public static void main(String[] args) {
+		
+		//Tipos Primitivos
+		byte b = 100;
+		short s = 1000;
+		int i = 10000;
+		long l = 10000L;
+		
+		//Tipos Wrapper
+	}
+}

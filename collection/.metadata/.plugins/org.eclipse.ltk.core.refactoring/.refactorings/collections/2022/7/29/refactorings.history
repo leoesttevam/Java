@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;colecoes.hash&apos; to &apos;Hash&apos;&#x0D;&#x0A;- Original project: &apos;collections&apos;&#x0D;&#x0A;- Original element: &apos;colecoes.hash&apos;&#x0D;&#x0A;- Renamed element: &apos;colecoes.Hash&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;hash&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;colecoes{hash.java[hash" matchStrategy="1" name="Hash" qualified="false" references="true" similarDeclarations="false" stamp="1657740359690" textual="false" version="1.0"/>
+</session>
