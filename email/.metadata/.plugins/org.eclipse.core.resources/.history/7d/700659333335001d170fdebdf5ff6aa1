@@ -1,0 +1,24 @@
+package br.com.enviandomail.email;
+
+import java.util.Properties;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class EmailApplicationTests {
+
+	@Test
+	public void testEmail() {
+		
+		Properties pr = new Properties();
+		pr.put("mail.smtp.auth", "true"); // Autorização
+		pr.put("mail.smtp.starttls", "true"); //Autenticação
+		pr.put("mail.smtp.host", "smtp.gmail.com"); // Servidor gmail Google
+		pr.put("mail.smtp.port", "465"); // Porta do servidor
+		pr.put("mail.smtp.socketFactory.port", "465"); // Expecifica a porta a ser conectada pelo socket
+		pr.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"); //Classe socket de conexão
+		
+	}
+	
+}
