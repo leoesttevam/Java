@@ -1,0 +1,26 @@
+package br.com.enviandomail.email;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import br.com.enviandomail.email.model.Email;
+
+@SpringBootTest
+class EmailApplicationTests {
+
+	@Test
+	public void testEmail() throws Exception {
+		
+		StringBuilder str = new StringBuilder();
+		
+		str.append("Testando HTML <br/><br/>");
+		str.append("Acesso");
+		
+		Email mail = new Email("leonardo.estevam@uni9.edu.br", "Leonardo Estevam", "Teste", str.toString());
+		
+		mail.enviarEmail(true);
+		
+		Thread.sleep(5000);
+	}
+	
+}

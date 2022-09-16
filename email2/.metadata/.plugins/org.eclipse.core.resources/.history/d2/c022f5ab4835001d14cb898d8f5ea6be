@@ -1,0 +1,7 @@
+package br.com.enviandomail.email;
+
+public class ObjetoEnviaEmail {
+
+	private String userName = "leonardo.estevam@uni9.edu.br";
+	private String senha = "N@do1709";
+}

@@ -1,0 +1,66 @@
+package br.com.enviandomail.email.model;
+
+import java.io.UnsupportedEncodingException;
+import java.util.Properties;
+
+import javax.mail.Address;
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+public class Email {
+
+	private String userName = "leonardo.estevam@uni9.edu.br";
+	private String senha = "N@do1709";
+	
+	private String listaDestinatario = "";
+	private String nomeRemetente = "";
+	private String assuntoEmail = "";
+	private String textoEmail = "";
+	
+	public Email(String listaDestinatario, String nomeRemetente, String assuntoEmail, String textoEmail) {
+		this.listaDestinatario = listaDestinatario;
+		this.nomeRemetente = nomeRemetente;
+		this.assuntoEmail = assuntoEmail;
+		this.textoEmail = textoEmail;
+	}
+	
+	public void enviarEmail(boolean emailHtml) throws UnsupportedEncodingException, MessagingException {
+		
+			Properties pr = new Properties();
+			pr.put("mail.smtp.ssl.trust", "*");
+			pr.put("mail.smtp.auth", "true"); // Autorização
+			pr.put("mail.smtp.starttls", "true"); //Autenticação
+			pr.put("mail.smtp.host", "smtp.gmail.com"); // Servidor gmail Google
+			pr.put("mail.smtp.port", "465"); // Porta do servidor
+			pr.put("mail.smtp.socketFactory.port", "465"); // Expecifica a porta a ser conectada pelo socket
+			pr.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"); //Classe socket de conexão
+			
+			Session secao = Session.getInstance(pr, new Authenticator() {
+				@Override
+				protected PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(userName, senha);
+				}
+			});
+			
+			Address[] toUser = InternetAddress.parse(listaDestinatario);
+			
+			Message ms = new MimeMessage(secao);
+			ms.setFrom(new InternetAddress(userName, nomeRemetente));
+			ms.setRecipients(Message.RecipientType.TO, toUser);
+			ms.setSubject(assuntoEmail);
+			
+			if(emailHtml) {
+				ms.setContent(textoEmail, "text/html; charset=utf-8");
+			}
+			ms.setText(textoEmail);
+			
+			Transport.send(ms);
+		
+	}
+}
